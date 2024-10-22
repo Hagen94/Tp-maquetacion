@@ -1,0 +1,217 @@
+:root {
+    --main-bg-color: rgba(48, 52, 63, 1);
+    --main-text-color: white;
+    --hover-color: blue;
+    --font-size-large: 2em;
+    --font-size-small: 1.6em;
+    --padding-content-large: 2rem;
+    --padding-content-small: 1rem;
+    --border-color: #E5E7EB;
+    --background-input-color: #E8F0FE;
+    --input-font-color: #48004F;
+    --focus-border-color: #3D8ABE;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+input[type="email"], input[type="password"] {
+    border-radius: 0.8rem;
+    border: 0.1rem solid var(--border-color);
+    background-color: var(--background-input-color);
+    font-size: var(--font-size-small);
+    font-weight: 400;
+    line-height: 2.4rem;
+    color: var(--input-font-color);
+}
+
+input[type="email"]:focus, input[type="password"]:focus {
+    border: 0.2rem solid var(--focus-border-color);
+    outline: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: solid 1px var(--border-color);
+    border-radius: 0.8rem;
+    width: 35%;
+    padding: var(--padding-content-large);
+    gap: var(--padding-content-large);
+}
+
+.form-login div {
+    width: 100%;
+}
+
+.div-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 35%;
+}
+
+.div-email {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.label-email {
+    position: absolute;
+    top: -5px;
+    left: 10px;
+    z-index: 1;
+   
+}
+
+.div-password {
+    display: flex;
+    flex-direction: column;
+}
+
+.password {
+    position: relative;
+}
+
+.label-password {
+    position: absolute;
+    top: -5px;
+    left: 10px;
+    z-index: 1;
+  
+}
+
+.input-wrapper {
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    width: 100%;
+}
+
+.input-password {
+    width: 100%;
+}
+
+.button-password {
+    position: absolute;
+    padding: 0.5rem;
+    right: 0.2rem;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+    height: 100%;
+    border: 0.1rem 0.1rem 0.1rem 0rem solid var(--border-color);
+}
+
+.div-autenticacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: var(--padding-content-small);
+}
+
+.div-autenticacion > * {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2rem;
+    color: #539bca;
+}
+
+.div-instructivo-tutorial {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.div-instructivo-tutorial > a {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1rem;
+    color: #539bca;
+    text-align: center;
+    gap: 0.5rem;
+    
+}
+
+.div-instructivo-tutorial .tutorial-instructivo {
+width: 1.5rem;
+height: 1.5rem;
+
+}
+
+.div-submit {
+    width: 100%;
+}
+
+.button-submit {
+    width: 100%;
+    background-color: #3D8ABE;
+    color: var(--main-text-color);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 0.8rem;
+    border: none;
+    padding: 0.8rem;
+}
+
+.div-instructivo-tutorial > * {
+    display: flex;
+    flex-direction: row;
+    font-size: var(--font-size-small);
+    font-weight: 400;
+    line-height: 2rem;
+    color: #539bca;
+}
+
+.tutorial-instructivo {
+    width: 5%;
+}
+
+.div-submit {
+    width: 100%;
+}
+
+.button-submit {
+    width: 100%;
+    background-color: #3D8ABE;
+    color: var(--main-text-color);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 0.8rem;
+    border: none;
+    padding: 0.8rem;
+}

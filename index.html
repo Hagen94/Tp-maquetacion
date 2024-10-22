@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquetacion y desarrollo web 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <nav>
+      <div class="primary-nav">
+         <a href="#" class="logo"><img src="imagenes/imagenes-index/asset 0.png" alt="" srcset="" ></a>
+        <nav class="menu-primary-nav">
+          <ul>
+            <li  tabindex="0">Pagina principal</li>
+            <li  tabindex="0">Area personal</li>
+            <li  tabindex="0">Mis cursos</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="secondary-nav">
+        <div>
+        <button type="button" class="boton-campana">
+          <img src="imagenes/imagenes-index/icono campana.png" class="icono-campana" alt="" srcset="">
+        </button></div>
+        <div>
+          <button type="button" class="mensaje" id="mensaje">
+            <img src="imagenes/imagenes-index/icono mensajes.png" class="icono-mensajes" alt="" srcset="">
+          </button>
+          <section  class="usuario-mensajes" id="usuario-mensajes">
+            <section class="cierro-seccion-mensajes" id="cierro-seccion-mensajes">X</section>
+            <section class="section-find-message">
+                  <div class="find-message"> 
+                    <div class="div-find-categoria">
+                      <input class="input-find" type="text" name="" id="">
+                      <button class="boton-lupa"><img src="imagenes/imagenes-index/icono lupa.png" class="icono-lupa"></button>
+                    </div>
+                    <button>*</button>
+                  </div>
+                  <a href="#">Contactos</a>
+            </section>
+            <section class="categorias-mensajes">Destacados</section>
+            <section class="categorias-mensajes">Grupos</section>
+            <section class="categorias-mensajes">Privados</section>
+            <section class="ver-todo">Ver todo</section>
+          </section>
+        </div>
+        <div>
+          <button type="button" class="boton-usuario" id="boton-opciones">
+            <img src="imagenes/imagenes-index/asset 1.jpeg" alt="" srcset="">
+          </button>
+          
+          <section class="usuario-opciones" id="usuario-opciones">
+           
+            <div> 
+              <a href="#">Accesibilidad</a></div>
+            <div> 
+              <a href="#">Perfil</a>
+              <a href="#">Calificaciones</a>
+              <a href="#">Calendario</a>
+              <a href="#">Mensajes</a>
+              <a href="#">Archivos privados</a>
+              <a href="#">Informes</a>
+          </div>
+           
+          <div>
+            <a href="#">Preferencias</a>
+          </div>
+           
+          <div>
+            <a href="/login.html">Cerrar sesion</a>
+          </div>
+            
+          </section>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+
+    <main>
+        <h1>Educación Digital UNNOBA</h1>
+        <button id="openPopup">Abrir Popup</button>
+
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span id="closePopup" class="close">&times;</span>
+                <p>¡Este es tu popup!</p>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>    
+        <p>Daniel Espinel Hagen</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
